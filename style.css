@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 4.5rem;
+}
+
+h2{
+    font-size: 3rem; 
+}
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+p,label{
+    font-size: 1.5rem;
+}
+
+.main-head{
+    background:#263238;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+#logo{
+    color: white;
+    flex:2 1 35rem;
+    font-size: 2.6rem;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center ;
+}
+ul li {
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(43, 42, 42, 0.5),transparent), url('/img/landing-page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    background-position: center;
+}
+
+.intro h1,.intro h2, .intro button{
+    text-align: center;
+}
+
+.intro h2{
+    padding: 2rem;
+}
+
+.intro button{
+    padding:1rem 2.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    background: #37474F;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Locations section*/
+
+#locations{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/new-york-page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head{
+    width: 90%;
+    margin: auto;
+  margin-top: 24rem;
+}
+
+.locations-head h2 {
+    padding: 2rem 0;
+    text-decoration:underline;
+    text-decoration-thickness:0.5rem ;
+}
+
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    
+}
+.moving-cloud-1{
+    animation: cloudAnimation 2.5s infinite alternate ease-in-out;
+    
+}
+.moving-cloud-2{
+z-index: -1;
+top: 20%;
+opacity: 0.5;
+animation: cloudAnimation 3s infinite alternate ease-in-out ;
+
+}
+
+@keyframes cloudAnimation {
+    from{
+        transform: translate(10%,-10%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
+
+
+/* Benefits Section */
+#benefits{
+
+}
+
+.benefits-head{
+    background: #37474F;
+    color: white;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.benefits-head h2{
+    padding: 1rem;
+}
+.cards{
+    display: flex;
+    min-height: 70vh;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* background: #263238; */
+    margin: 2rem 5rem;
+    min-height: 40vh;
+    flex: 1 1 30rem;
+    text-align: center;
+    box-shadow: 0 1px 15px rgba(0, 0,0, 0.5);
+    border-radius: 3px;
+}
+
+.card h4 {
+    padding:2rem;
+}
+.card-icon{
+    
+    /* padding: 2rem; */
+    background: #37474F;
+}
+
+.card img{
+    /* height: 100px; */
+    max-width: 15%;
+    margin: 2rem;
+}
+
+/* Contact */
+
+#contact{
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),url('./img/contact-mountain.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-wrapper{
+    width: 60%;
+    background:rgba(38, 38, 43, 0.8);
+    border-radius: 20px;
+ 
+}
+
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,.email-form{
+text-align: center;
+padding: 2rem 0;
+}
+
+.form-wrapper label{
+    margin: 0 3rem;
+
+}
+
+.form-wrapper input{
+    padding: 1rem 2rem;
+    width: 30rem;
+}
+
+.form-wrapper input:focus{
+    outline: none;
+}
+.form-wrapper button{
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    background: #29414d;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background: #131c20;
+
+}
+.footer-wrapper{
+    min-height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+footer h3{
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 30rem;
+    list-style: none;
+    align-items: center;
+
+}
+
+@media screen and (max-width:910px){
+    nav{
+        text-align: center;
+    }
+    #logo{
+        text-align: center;
+        padding: 1rem;
+    }
+    html{
+        font-size: 45%;
+    }
+    .cloud{
+        height:35rem;
+    }
+    .moving-cloud-1{
+        z-index: -1;
+    }
+    .moving-cloud-2{
+        z-index: -2;
+        top: 10%;
+    }
+    .form-wrapper{
+        width: 99%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer h3 {
+        
+        padding: 2rem 0;
+    }
+}
